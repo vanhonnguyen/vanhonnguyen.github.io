@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Resume</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .main {
+            width: 75%;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .progress-container {
+            margin: 10px 0;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+        }
+        .progress-bar div {
+            height: 20px;
+            background-color: #2c6e49; /* Darker green color for better contrast */
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+        .progress-graphic { width: 60%; }
+        .progress-html { width: 80%; }
+        .progress-web { width: 40%; }
+        .progress-css { width: 90%; }
+        .profile-img {
+            width: 300px;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .expertise-img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .expertise-images {
+            display: flex;
+            gap: 20px; /* Adjust the gap as needed */
+            flex-wrap: wrap; /* Ensure images wrap to the next line if necessary */
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Big Star</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <section class="info">
+                <h2>Info</h2>
+                <p>Address: 123 Street Name, City</p>
+                <p>Phone: (123) 456-7890</p>
+            </section>
+            <section class="social">
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </section>
+        </aside>
+        <main class="main">
+            <article class="profile section">
+                <h2>Profile</h2>
+                <p>I am a graphic and web designer with a passion for creating visually appealing and user-friendly designs.</p>
+                <img src="https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile image of Big Star" class="profile-img">
+            </article>
+            <section class="skills section">
+                <h2>Skills</h2>
+                <div class="progress-container">
+                    <span>Graphic Design</span>
+                    <div class="progress-bar">
+                        <div class="progress-graphic">60%</div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>HTML</span>
+                    <div class="progress-bar">
+                        <div class="progress-html">80%</div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>Web Design</span>
+                    <div class="progress-bar">
+                        <div class="progress-web">40%</div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress-css">90%</div>
+                    </div>
+                </div>
+            </section>
+            <section class="expertise section">
+                <h2>Expertise</h2>
+                <ul>
+                    <li>Creative design</li>
+                    <li>Responsive layouts</li>
+                    <li>User experience optimization</li>
+                </ul>
+                <div class="expertise-images">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGV4cGVydGlzZXxlbnwwfHx8fDE2ODkwNTYyNjA&ixlib=rb-1.2.1&q=80&w=400" alt="Expertise Image 1" class="expertise-img">
+                        <figcaption>Expertise Image 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGV4cGVydGlzZXxlbnwwfHx8fDE2ODkwNTYzMzA&ixlib=rb-1.2.1&q=80&w=400" alt="Expertise Image 2" class="expertise-img">
+                        <figcaption>Expertise Image 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDh8fGV4cGVydGlzZXxlbnwwfHx8fDE2ODkwNTY4ODQ&ixlib=rb-1.2.1&q=80&w=400" alt="Expertise Image 3" class="expertise-img">
+                        <figcaption>Expertise Image 3</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Big Star. All rights reserved.</p>
+    </footer>
+</body>
+</html>
